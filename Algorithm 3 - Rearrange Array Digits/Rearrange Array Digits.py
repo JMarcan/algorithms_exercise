@@ -8,7 +8,13 @@ def rearrange_digits(input_arr):
        input_list(list): Input List
     Returns:
        (int),(int): Two largest possible integers created from provided numbers
-    """    
+    """
+    
+    # Test that input_arr consists of digits between 0 and 9
+    for element in input_arr:
+        if element < 0 or element > 9:
+            return -1, -1
+    
     #empty arrays holding final digits
     out1 = []
     out2 = []
@@ -90,9 +96,15 @@ def test_mergesort(test_case):
         print("Pass")
     else:
         print("Fail")
-        
+
+print ("=== mergesort, test cases ===:")        
 test_mergesort([[1, 2, 3, 4, 5], [1, 2, 3, 4, 5]])
 test_mergesort([[4, 6, 2, 5, 9, 8], [2, 4, 5, 6, 8, 9]])
-
+print ("=== rearrange digits, test cases ===:")
 test_rearrange_digits([[1, 2, 3, 4, 5], [542, 31]])
 test_rearrange_digits([[4, 6, 2, 5, 9, 8], [964, 852]])
+print ("=== rearrange digits, edge test cases ===:")
+# test that function will return -1 when input over 9 is provided
+test_rearrange_digits([[11, 12, 13, 14, 15], [-1, -1]]) 
+# test that function will return -1 when negative input below 0 is provided
+test_rearrange_digits([[-1, -2, -3, -4, -5], [-1, -1]]) 

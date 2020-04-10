@@ -140,9 +140,13 @@ test_binary_search([[1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3])
 test_binary_search([[1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 2]) 
 test_binary_search([[1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 1]) 
    
-print ("=== rotated_array_search test cases execution ===:")
+print ("=== rotated_array_search, test cases ===:")
 test_rotated_array_search([[6, 7, 8, 9, 10, 1, 2, 3, 4], 6])
 test_rotated_array_search([[6, 7, 8, 9, 10, 1, 2, 3, 4], 1])
 test_rotated_array_search([[6, 7, 8, 1, 2, 3, 4], 8])
 test_rotated_array_search([[6, 7, 8, 1, 2, 3, 4], 1])
 test_rotated_array_search([[6, 7, 8, 1, 2, 3, 4], 10])
+
+print ("=== rotated_array_search, edge test cases ===:")
+test_rotated_array_search([[6, 7, 8, 1, 2, 3, 4], 25]) #accessing non existing positive index
+test_rotated_array_search([[6, 7, 8, 1, 2, 3, 4], -1]) #accessing negative
