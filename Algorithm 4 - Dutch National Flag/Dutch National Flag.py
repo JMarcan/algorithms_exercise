@@ -1,11 +1,31 @@
-def sort_012(input_list):
+def sort_012(input_arr):
     """
     Given an input array consisting on only 0, 1, and 2, sort the array in a single traversal.
 
+    Time Complexity O(n)
+    Space Complexity O(n)
+    
     Args:
-       input_list(list): List to be sorted
+       input_arr(array): Array to be sorted
+       
+    Returns:
+        sorted_arr(array): Sorted array
     """
-    pass
+    
+    bin_zeros = []
+    bin_ones = []
+    bin_twos = []
+    
+    for element in input_arr:
+        if element == 0:
+            bin_zeros.append(element)
+        elif element == 1:
+            bin_ones.append(element)
+        elif element == 2:
+            bin_twos.append(element)
+    
+    sorted_arr = bin_zeros + bin_ones + bin_twos         
+    return sorted_arr
 
 def test_function(test_case):
     sorted_array = sort_012(test_case)
