@@ -3,3 +3,4 @@ my algorithm first finds the pivot and then runs binary search on the relevant h
 
 Time complexity: O(log2 (n))
 Space Complexity: O(1)
+Where n is the array size. 

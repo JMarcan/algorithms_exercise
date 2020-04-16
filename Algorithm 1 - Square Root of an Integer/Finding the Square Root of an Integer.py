@@ -5,6 +5,7 @@ def sqrt(number:int):
      
      Time complexity: O(log n)
      Space Complexity: O(1)
+     Where n is value of the Integer
     
      Args:
          - number(int): number for which will be calculated square root 

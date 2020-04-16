@@ -4,6 +4,7 @@ def sort_012(input_arr):
 
     Time Complexity O(n)
     Space Complexity O(n)
+    Where n is the array size.  
     
     Args:
        input_arr(array): Array to be sorted

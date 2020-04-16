@@ -4,6 +4,7 @@ def rotated_array_search(input_arr, number):
     
     Time complexity: O(log2(n)) (as long as array is rotated only once)
     Space Complexity: O(1)
+    Where n is the array size
 
     Args:
        input_array(array), number(int): Input array to search and the target

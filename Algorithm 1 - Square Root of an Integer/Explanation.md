@@ -4,3 +4,4 @@ I've applied binary search for its quick O(log2 n) run.
 
 Time complexity: O(log n)
 Space Complexity: O(1)
+Where n is value of the Integer

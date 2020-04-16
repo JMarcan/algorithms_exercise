@@ -5,4 +5,5 @@ Then it loops through the list and to produce a maximum sum of these two numbers
  each even element is added to the number one, each odd element is added to the number two.
 
 Time complexity: O(n log(n)) inherited from mergesort
-Space Complexity: O(1)
+Space Complexity: O(n)
+Where n is the array size 

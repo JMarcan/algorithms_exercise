@@ -6,3 +6,4 @@ In the end all three arrays are merged into one and the sorted array is returned
 
 Time complexity: O(n) as we loop through each item
 Space Complexity O(n)
+Where n is the array size.  

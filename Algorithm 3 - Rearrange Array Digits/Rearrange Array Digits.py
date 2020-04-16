@@ -3,6 +3,8 @@ def rearrange_digits(input_arr):
     Rearrange Array Elements so as to form two number such that their sum is maximum.
 
     Time complexity: O(n log(n)) due to mergesort
+    Space complexity: O(n)
+    Where n is the array size. 
     
     Args:
        input_list(list): Input List
